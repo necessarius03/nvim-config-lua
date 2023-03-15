@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
     tag = "v3.*",
     requires = 'nvim-tree/nvim-web-devicons'
   }
+  use 'folke/which-key.nvim'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
