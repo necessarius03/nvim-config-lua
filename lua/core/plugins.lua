@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
     tag = '0.1.1',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use 'glepnir/dashboard-nvim'
   use 'akinsho/toggleterm.nvim'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
