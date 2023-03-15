@@ -54,5 +54,5 @@ formatting = {
         return vim_item
       end
     })
-  }  
+  }
 }

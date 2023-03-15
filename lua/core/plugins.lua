@@ -30,7 +30,7 @@ return require('packer').startup(function(use)
     "onsails/lspkind.nvim"
   }
   use {
-    'nvim-telescope/telescope.nvim', 
+    'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
