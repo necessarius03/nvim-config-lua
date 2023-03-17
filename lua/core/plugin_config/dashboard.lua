@@ -102,13 +102,13 @@ require('dashboard').setup {
         key_hl = 'Number',
         action = 'lua print(2)'
       },
---      {
---        icon = ' ',
---        desc = 'Find Dotfiles',
---        key = 'f',
---        keymap = 'SPC f d',
---        action = 'lua print(3)'
---      },
+      {
+        icon = ' ',
+        desc = 'Quit',
+        key = 'f',
+        keymap = ': q',
+        action = 'lua print(3)'
+      },
     },
     footer = {}  --your footer
   }
