@@ -37,7 +37,6 @@ local plugins = {
    'akinsho/toggleterm.nvim',
    {
     'akinsho/bufferline.nvim',
-    tag = "v3.*",
     dependencies = 'nvim-tree/nvim-web-devicons'
    },
    'folke/which-key.nvim'
