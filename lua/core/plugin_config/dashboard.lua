@@ -4,6 +4,12 @@ require('dashboard').setup {
   theme = 'doom',
   config = {
     header = {
+    [[                              ]],
+    [[                              ]],
+    [[                              ]],
+    [[                              ]],
+    [[                              ]],
+
 
     [[⡿⠋⠄⣀⣀⣤⣴⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣌⠻⣿⣿]],
     [[⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠹⣿]],
@@ -102,14 +108,16 @@ require('dashboard').setup {
         key_hl = 'Number',
         action = 'lua print(2)'
       },
-      {
-        icon = ' ',
-        desc = 'Quit',
-        key = 'f',
-        keymap = 'q',
-        action = 'lua print(3)'
-      },
+--      {
+--        icon = ' ',
+--        desc = 'Quit',
+--        key = 'f',
+--        keymap = 'q',
+--        action = 'lua print(3)'
+--      },
     },
-    footer = {}  --your footer
+    footer = {
+      'Hello onni-chan, use <space>ff to find file'
+    }  --your footer
   }
 }
