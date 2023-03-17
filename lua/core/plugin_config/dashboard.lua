@@ -106,7 +106,7 @@ require('dashboard').setup {
         icon = ' ',
         desc = 'Quit',
         key = 'f',
-        keymap = ': q',
+        keymap = 'q',
         action = 'lua print(3)'
       },
     },
