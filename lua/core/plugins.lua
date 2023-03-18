@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local plugins = { 
+local plugins = {
    'nvim-tree/nvim-tree.lua',
    'nvim-tree/nvim-web-devicons',
    'nvim-lualine/lualine.nvim',
@@ -39,8 +39,10 @@ local plugins = {
     'akinsho/bufferline.nvim',
     dependencies = 'nvim-tree/nvim-web-devicons'
    },
-   'folke/which-key.nvim'
- }
+   'folke/which-key.nvim',
+   'vim-test/vim-test'
+}
+
 
 local opts = {}
 
