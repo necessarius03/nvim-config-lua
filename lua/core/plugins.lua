@@ -12,13 +12,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-   'nvim-tree/nvim-tree.lua',
-   'nvim-tree/nvim-web-devicons',
-   'nvim-lualine/lualine.nvim',
+    'nvim-tree/nvim-tree.lua',
+    'nvim-tree/nvim-web-devicons',
+    'nvim-lualine/lualine.nvim',
   -- use 'folke/tokyonight.nvim'
-   'navarasu/onedark.nvim',
-   'nvim-treesitter/nvim-treesitter',
-   {
+    'navarasu/onedark.nvim',
+    'nvim-treesitter/nvim-treesitter',
+    {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
@@ -27,22 +27,21 @@ local plugins = {
     "saadparwaiz1/cmp_luasnip", -- Snippets source for nvim-cmp
     "L3MON4D3/LuaSnip", -- Snippets plugin
     "onsails/lspkind.nvim",
-   },
-   {
+    },
+    {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
     dependencies = { {'nvim-lua/plenary.nvim'} }
-   },
-   'glepnir/dashboard-nvim',
-   'akinsho/toggleterm.nvim',
-   {
+    },
+    'glepnir/dashboard-nvim',
+    'akinsho/toggleterm.nvim',
+    {
     'akinsho/bufferline.nvim',
     dependencies = 'nvim-tree/nvim-web-devicons'
-   },
-   'folke/which-key.nvim',
-   'vim-test/vim-test'
+    },
+    'folke/which-key.nvim',
+    'vim-test/vim-test',
 }
-
 
 local opts = {}
 

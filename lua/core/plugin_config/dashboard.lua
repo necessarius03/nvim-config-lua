@@ -46,8 +46,8 @@ require('dashboard').setup {
     [[     ⠈⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁      ]],
     [[        ⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁     ⢀⣠⣴ ]],
     [[ ⣿⣿⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⣠⣴⣿⣿⣿ ]],
-    [[                                ]],
-    [[                                ]],
+
+
 
 --    [[ ⡆⣐⢕⢕⢕⢕⢕⢕⢕⢕⠅⢗⢕⢕⢕⢕⢕⢕⢕⠕⠕⢕⢕⢕⢕⢕⢕⢕⢕⢕]],
 --    [[⢐⢕⢕⢕⢕⢕⣕⢕⢕⠕⠁⢕⢕⢕⢕⢕⢕⢕⢕⠅⡄⢕⢕⢕⢕⢕⢕⢕⢕⢕]],
@@ -79,7 +79,7 @@ require('dashboard').setup {
 --    [[ ⡝⡵⡈⢟⢕⢕⢕⢕⣵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣿⠿⠋⣀⣈⠙ ]],
 --    [[ ⡝⡵⡕⡀⠑⠳⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⢉⡠⡲⡫⡪⡪⡣ ]]
 
-    
+
 --    [[ ⡿⠉⠄⠄⠄⠄⠈⠙⠿⠟⠛⠉⠉⠉⠄⠄⠄⠈⠉⠉⠉⠛⠛⠻⢿⣿⣿⣿⣿⣿ ]],
 --    [[ ⠁⠄⠄⠄⢀⡴⣋⣵⣮⠇⡀⠄⠄⠄⠄⠄⠄⢀⠄⠄⠄⡀⠄⠄⠄⠈⠛⠿⠋⠉ ]],
 --    [[ ⠄⠄⠄⢠⣯⣾⣿⡿⣳⡟⣰⣿⣠⣂⡀⢀⠄⢸⡄⠄⢀⣈⢆⣱⣤⡀⢄⠄⠄⠄ ]],
@@ -96,28 +96,40 @@ require('dashboard').setup {
 --    [[ ⣿⠄⠄⠘⢿⣿⣿⣿⣿⣿⣿⢛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⢄⡆⠄⢀⣪⡆⠄⣿ ]],
 --    [[ ⡟⠄⠄⠄⠄⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣟⣻⣩⣾⣃⣴⣿⣿⡇⠸⢾ ]],
 
+
+      [[                                ]],
+      [[                                ]],
     }, --your header
     center = {
       {
-        icon = ' ',
+        icon = ' ',
         icon_hl = 'Title',
         desc = 'Find File           ',
         desc_hl = 'String',
         key = 'b',
-        keymap = 'SPC f f',
         key_hl = 'Number',
-        action = 'lua print(2)'
+        action = 'Telescope find_files',
       },
---      {
---        icon = ' ',
---        desc = 'Quit',
---        key = 'f',
---        keymap = 'q',
---        action = 'lua print(3)'
---      },
+      {
+        icon = ' ',
+        icon_hl = 'Title',
+        desc = 'Recent files',
+        desc_hl = 'String',
+        key = 'r',
+        key_hl = 'Number',
+        action = ':Telescope oldfiles',
+      },
+      {
+        icon = ' ',
+        icon_hl = 'Title',
+        desc = 'Quit',
+        desc_hl = 'String',
+        key = 'q',
+        key_hl = 'Number',
+        action = ':qa'
+      },
     },
     footer = {
-      'Hello onni-chan, use <space>ff to find file'
     }  --your footer
   }
 }
