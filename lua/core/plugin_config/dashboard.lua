@@ -7,8 +7,6 @@ require('dashboard').setup {
     [[                              ]],
     [[                              ]],
     [[                              ]],
-    [[                              ]],
-    [[                              ]],
 
 
 --    [[⡿⠋⠄⣀⣀⣤⣴⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣌⠻⣿⣿]],
@@ -106,17 +104,17 @@ require('dashboard').setup {
         icon_hl = 'Title',
         desc = 'Find File           ',
         desc_hl = 'String',
-        key = 'b',
+        key = 'f',
         key_hl = 'Number',
         action = 'Telescope find_files',
       },
       {
         icon = ' ',
-        icon_hl = 'Title',
+        icon_hl = 'title',
         desc = 'Recent files',
-        desc_hl = 'String',
+        desc_hl = 'string',
         key = 'r',
-        key_hl = 'Number',
+        key_hl = 'number',
         action = ':Telescope oldfiles',
       },
       {
