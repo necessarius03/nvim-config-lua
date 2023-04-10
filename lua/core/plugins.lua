@@ -18,7 +18,7 @@ local plugins = {
   -- use 'folke/tokyonight.nvim'
     'navarasu/onedark.nvim',
     'nvim-treesitter/nvim-treesitter',
-    {
+
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
@@ -26,8 +26,10 @@ local plugins = {
     "hrsh7th/cmp-nvim-lsp", -- LSP source for nvim-cmp
     "saadparwaiz1/cmp_luasnip", -- Snippets source for nvim-cmp
     "L3MON4D3/LuaSnip", -- Snippets plugin
+    'saadparwaiz1/cmp_luasnip',
+    'rafamadriz/friendly-snippets',
     "onsails/lspkind.nvim",
-    },
+
     {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
