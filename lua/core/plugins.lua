@@ -29,7 +29,7 @@ local plugins = {
     'saadparwaiz1/cmp_luasnip',
     'rafamadriz/friendly-snippets',
     "onsails/lspkind.nvim",
-
+    'windwp/nvim-autopairs',
     {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
@@ -43,7 +43,7 @@ local plugins = {
     },
     'folke/which-key.nvim',
     'vim-test/vim-test',
-    'andweeb/presence.nvim'
+    'andweeb/presence.nvim',
 }
 
 local opts = {}
