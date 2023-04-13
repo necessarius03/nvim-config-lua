@@ -43,6 +43,7 @@ local plugins = {
     },
     'folke/which-key.nvim',
     'vim-test/vim-test',
+    'andweeb/presence.nvim'
 }
 
 local opts = {}
