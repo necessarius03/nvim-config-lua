@@ -26,5 +26,7 @@ vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv", opts)
 vim.keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
+--LSPsaga keymap
+vim.keymap.set("n", "<leader>o", ":Lspsaga outline", opts)
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
